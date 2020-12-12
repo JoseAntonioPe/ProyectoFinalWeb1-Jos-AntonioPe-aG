@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Proyecto Final Web 1</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header class="principal-encabezado">
+        <h1 id="logo-principal"><i>BOLITA SERIES XD</i> </h1>
+    </header>
+    <div class="login-box">
+
+        <h1>REGISTRATE YA!</h1>
+        <form id="form-registro" method="POST">
+            <label for="form-nombreCompleto">Nombre Completo</label>
+            <input id="form-nombreCompleto" name="form-nombreCompleto" type="text" placeholder="Ingresa tu Nombre">
+
+            <label for="form-username">Nuevo Usuario</label>
+            <input id="form-username" name="form-username" type="text" placeholder="Usuario">
+
+            <label for="form-password">Contraseña</label>
+            <input id="form-password" name="form-password" type="password" placeholder="Ingresa Contraseña">
+
+            <label for="form-tipoUsuario">Tipo Usuario</label>
+            <select id="form-tipoUsuario" name="form-tipoUsuario">
+                <option value="ADM">Administrador</option>
+                <option value="CLIENTE">Cliente</option>
+            </select>
+            <input type="hidden" name="form-peticion" id="form-peticion" value="create">
+            <input id="form-registrarUsuario" name="form-registrarUsuario" type="submit" value="Registrar Usuario">
+
+        </form>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>
